@@ -12,8 +12,9 @@ import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 import fr.epita.iamcore.constants.sqlCons;
 import fr.epita.iamcore.datamodel.Identity;
 import fr.epita.iamcore.exceptions.DAOIdentityExceptions;
+import fr.epita.iamcore.logger.Logger_Core;
 import fr.epita.iamcore.services.IdentityDAO;
-import fr.epita.logger.Logger;;
+
 
 /**
  * Enterprise data object for handling CRUD Operations using DB derby and sql commands
@@ -24,7 +25,7 @@ import fr.epita.logger.Logger;;
 public class IdentityDB_JDBC_DAO implements IdentityDAO  {
 
 	/** The Logger */
-	private static final Logger logger = new Logger(IdentityDB_JDBC_DAO.class);
+	private static final Logger_Core logger = new Logger_Core(IdentityDB_JDBC_DAO.class);
 
 
 	/**

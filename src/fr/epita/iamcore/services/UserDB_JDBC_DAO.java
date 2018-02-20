@@ -10,7 +10,8 @@ import java.util.List;
 import fr.epita.iamcore.constants.sqlCons;
 import fr.epita.iamcore.datamodel.User;
 import fr.epita.iamcore.exceptions.DAOUserException;
-import fr.epita.logger.Logger;
+import fr.epita.iamcore.logger.Logger_Core;
+
 
 /**
  * Enterprise data object for handling User Operations using DB derby and sql commands
@@ -21,7 +22,7 @@ import fr.epita.logger.Logger;
 public class UserDB_JDBC_DAO implements UserDAO{
 
 	/** The Logger */
-	private static final Logger logger = new Logger(IdentityDB_JDBC_DAO.class);
+	private static final Logger_Core logger = new Logger_Core(IdentityDB_JDBC_DAO.class);
 	
 	/**
 	 * Creates new User with UID Email and Password.

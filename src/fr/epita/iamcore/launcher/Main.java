@@ -7,9 +7,10 @@ import fr.epita.iamcore.datamodel.Identity;
 import fr.epita.iamcore.datamodel.User;
 import fr.epita.iamcore.exceptions.DAOIdentityExceptions;
 import fr.epita.iamcore.exceptions.DAOUserException;
+import fr.epita.iamcore.logger.Logger_Core;
 import fr.epita.iamcore.services.IdentityDB_JDBC_DAO;
 import fr.epita.iamcore.services.UserDB_JDBC_DAO;
-import fr.epita.logger.Logger;
+
 
 /**
  * Enterprise Main class containing the Main methods.
@@ -22,7 +23,7 @@ import fr.epita.logger.Logger;
 
 public class Main {
 	/** The Logger */
-	private static final Logger logger = new Logger(Main.class);
+	private static final Logger_Core logger = new Logger_Core(Main.class);
 	
 	/** The IdentityDAO Object */
 	private static final IdentityDB_JDBC_DAO dao = new IdentityDB_JDBC_DAO();

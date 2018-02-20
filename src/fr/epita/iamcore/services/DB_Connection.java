@@ -9,7 +9,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import fr.epita.logger.Logger;
+import fr.epita.iamcore.logger.Logger_Core;
+
 
 /**
  * Enterprise data object for the DB connection
@@ -39,7 +40,7 @@ public class DB_Connection {
 		private static InputStream inputStream;
 		
 		/** The Logger */
-		private static final Logger logger = new Logger(DB_Connection.class);
+		private static final Logger_Core logger = new Logger_Core(DB_Connection.class);
 
 		static {
 			properties = initialiseProperties();
