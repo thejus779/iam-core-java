@@ -1,0 +1,8 @@
+fr.epita.iamcore.constants
+fr.epita.iamcore.datamodel
+fr.epita.iamcore.exceptions
+fr.epita.iamcore.launcher
+fr.epita.iamcore.services
+fr.epita.iamcore.services.test
+fr.epita.logger
+fr.epita.logger.test
